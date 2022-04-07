@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Shade&family=Calistoga&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oleo+Script:wght@400;700&family=Patrick+Hand&family=Yeseva+One&display=swap" rel="stylesheet">
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- <script src="script.js"></script> -->
+     <title>ANIME WIZARD</title>
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i><img src="otaku.png" alt="" style="width: 50px; padding-top: 20px;"></i>
+      <span class="logo_name">CodingLab</span>
+    </div>
+    <ul class="nav-links">
+      
+      <li>
+        <div class="iocn-link">
+          <a href="#top">
+            <i class='box-icon'><h3>10</h3>></i>
+            <span class="link_name">Category</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+            <li><a class="link_name" href="#top">TRENDING</a></li>
+          </ul>
+        
+      </li>
+ 
+      <li>
+        <a href="#char">
+            <i class='bx bxs-face'></i>
+          <span class="link_name">>CHARACTERS</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#char">CHARACTERS</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#histo">
+            <i class='bx bx-news'></i>
+          <span class="link_name">Chart</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#histo">NEWS</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#poster1">
+          <i class='bx bx-search-alt'></i>
+          <span class="link_name">SEARCH</span>
+        </a>
+        
+      </li>
+      <li>
+        <button class="btn link_name" onclick="myFunction()"><i  class='bx bx-cog id1' ></i></button>
+        <!-- <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank" id="settings">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul> -->
+      </li>
+      </ul>
+      </div>
+
+      <section>
+       <div class="container">
+        <div class="row row-cols-6 row-cols-md-6 g-6" id="search">
+
+        </div>
+    </div>
+    
+      </section>
+      <section class="home-section" id="poster1">
+        <div class="home-content">
+          <div style="margin-top: 200px;">
+               <img src="poster 10.jpg" alt="" style="width:143ch;height:50vh;">
+          </div> 
+      </div> 
+      
+      <form class="form1" action="">
+        <input type="search" placeholder="Search here ..." id="searchanime" class="search">
+        <i id="bot" class="fa fa-search"></i>
+      </form>
+
+      </section>
+      <section>
+    
+    <!-- <div id="search">
+      <span></span>
+  </div> -->
+  </section>
+      <div id="top" style="margin-left: 69ch; margin-top: 230px;">
+        <h2 class="headcol" id="tophead">TOP ANIME</h2>
+        <!-- <x-sign>
+          <small>TOP ANIME</small>
+        </x-sign> -->
+      </div>
+      <section>
+    
+  <section class="carousel slide" data-ride="carousel" id="postsCarousel">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 text-right mb-4">
+                  <a class="btn btn-outline-secondary prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+                  <a class="btn btn-outline-secondary next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="container p-t-0 m-t-2 carousel-inner">
+          <div class="row row-equal carousel-item active m-t-0">
+              <div class="col-md-4">
+                  <div  class="card">
+                      <div class="card-img-top card-img-top-250 image1">
+                          <img class="img-fluid image1" src="one piece.jpg" alt="Carousel 1" style="height: 20rem;">
+                      </div>
+                      <div class="card-block p-t-2 ">
+                          <div class="card-header"><h3>One Piece</h3></div>
+                          <div class="card-text card-pad ">
+                            <h4>Ratings-8.8/10</h4>
+                            <h4>1996</h4>
+                         <b> Creator-Eiichiro Oda(comics)</b>
+                          <br>
+                          The story follows the adventures of Monkey D. Luffy, a boy whose body gained the properties of rubber after unintentionally eating a Devil Fruit. With his crew of pirates, named the Straw Hat Pirates, Luffy explores the Grand Line in search of the world's ultimate treasure known as "One Piece" in order to become the next King of the Pirates.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <div class="card-img-top cardxy card-img-top-250">
+                          <img class="img-fluid" src="naruto.jpg" alt="Carousel 1"  style="height: 20rem;">
+                      </div>
+                      <div class="card-block p-t-2">
+                          <div class="card-header"><h3>Naruto</h3></div>
+                          <div class="card-text card-pad"><h4>Ratings-8.6/10</h4>
+                          <h4>2002</h4>
+                          <b>Creator-
+                            Masashi Kishimoto</b>
+                            <br>
+                            The story is told in two parts – the first set in Naruto's pre-teen years, and the second in his teens. The series is based on two one-shot manga by Kishimoto: Karakuri (1995), which earned Kishimoto an honorable mention in Shueisha's monthly Hop Step Award the following year, and Naruto (1997).
+                       </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card">
+                      <div class="card-img-top card-img-top-250">
+                          <img class="img-fluid" src="MHA.jpg" alt="Carousel 1"  style="height: 20rem;">
+                      </div>
+                      <div class="card-block p-t-2">
+                          <div class="card-header"><h3>My Hero Academia</h3></div>
+                          <div class="card-text card-pad"><h4>Ratings-8.4/10</h4>
+                          <h4>2016</h4>
+                          <b>Creator-Kōhei Horikoshi</b>
+                          <br>
+                          The story follows Izuku Midoriya, a boy born without superpowers (called Quirks) in a world where they have become commonplace, but who still dreams of becoming a superhero himself. He is scouted by All Might, Japan's greatest hero, who chooses Midoriya as his successor and shares his Quirk with him after recognizing his potential, and later helps to enroll him in a prestigious high school for heroes in training.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row row-equal carousel-item m-t-0">
+              <div class="col-md-4">
+                  <div class="card">
+                      <div class="card-img-top card-img-top-250">
+                          <img class="img-fluid " src="AOT.jpg" alt="Carousel 1" style="height: 20rem;">
+                      </div>
+                      <div class="card-block p-t-2">
+                          <div class="card-header"><h3 class="heading">Attack On Titan</h3></div>
+                          <div class="card-text card-pad"><h4>Ratings-9/10</h4>
+                          <h4>2013</h4>
+                        <b>Creator-Hajime Isayama</b>
+                        <br>
+                        The story follows Eren Yeager, who vows to exterminate the Titans after a Titan brings about the destruction of his hometown and the death of his mother. Attack on Titan was serialized in Kodansha's monthly shōnen manga magazine Bessatsu Shōnen Magazine from September 2009 to April 2021, with its chapters collected in 34 tankōbon volumes.
+                        </div>
+                      </div>
+                  </div>
+              </div>
+             <div class="col-md-4">
+                  <div class="card">
+                      <div class="card-img-top card-img-top-250">
+                          <img class="img-fluid" src="DBZ.jpg" alt="Carousel 1"  style="height: 20rem;">
+                      </div>
+                      <div class="card-block p-t-2">
+                          <div class="card-header"><h3>Dragon Ball z</h3></div>
+                          <div class="card-text card-pad"><h4>Ratings-8.7/10</h4>
+                          <h4>1989</h4>
+                          <b>Creator-Toei Animation</b>
+                          <br>
+                          Dragon Ball Z continues the adventures of Son Goku in his adult life as he and his companions defend the Earth against villains including aliens (Vegeta, Frieza), androids (Cell), and magical creatures (Majin Buu). At the same time, the story parallels the life of his son, Gohan, as well as the development of his rivals, Piccolo and Vegeta.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+             <div class="col-md-4">
+                  <div class="card">
+                      <div class="card-img-top card-img-top-250">
+                          <img class="img-fluid" src="deathnote1.jpg" alt="Carousel 1"  style="height: 20rem;">
+                      </div>
+                      <div class="card-block p-t-2">
+                          <div class="card-header"><h3>Death Note</h3></div>
+                          <div class="card-text card-pad"><h4>Ratings-9/10</h4>
+                          <h4>2006</h4>
+                        <b>Creator- Tsugumi Ohba</b>
+                        <br>
+                        The series centers around Light's subsequent attempts to use the Death Note to carry out a worldwide massacre of individuals whom he deems immoral and to create a crime-free society, using the alias of a god-like vigilante named "Kira", and the subsequent efforts of an elite Japanese police task force, led by enigmatic detective L, to apprehend him.
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+
+          <div class="row row-equal carousel-item m-t-0">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top card-img-top-250">
+                        <img class="img-fluid " src="bleach.jpg" alt="Carousel 1" style="height: 20rem;">
+                    </div>
+                    <div class="card-block p-t-2">
+                        <div class="card-header"><h3>Bleach</h3></div>
+                        <div class="card-text card-pad"><h4>Ratings-8.2/10</h4>
+                        <h4>2004</h4>
+                        <b> Creator-Tite Kubo(manga)</b>
+                        <br>
+                        The story follows the adventures of Ichigo Kurosaki after he obtains the powers of a Soul Reaper—a death personification similar to the Grim Reaper—from another Soul Reaper, Rukia Kuchiki. His newfound powers force him to take on the duties of defending humans from evil spirits and guiding departed souls to the afterlife. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top card-img-top-250">
+                        <img class="img-fluid" src="fullmetal.jpg" alt="Carousel 1"  style="height: 20rem;">
+                    </div>
+                    <div class="card-block p-t-2">
+                        <div class="card-header"><h3>Full Metal Alchemists</h3></div>
+                        <div class="card-text card-pad"><h4>Ratings-9.1/10</h4>
+                        <h4>2009</h4>
+                        <b>Creator-Hiromu Arakawa</b>
+                        <br>
+                        It was serialized in Square Enix's Monthly Shōnen Gangan shōnen manga anthology magazine between July 2001 and June 2010; the publisher later collected the individual chapters into twenty-seven tankōbon volumes. The steampunk world of Fullmetal Alchemist is primarily styled after the European Industrial Revolution. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top card-img-top-250">
+                        <img class="img-fluid" src="flcl.jpg" alt="Carousel 1"  style="height: 20rem;">
+                    </div>
+                    <div class="card-block p-t-2">
+                        <div class="card-header"><h3>FLCL</h3></div>
+                        <div class="card-text card-pad"><h4>Ratings-8.2/10</h4>
+                        <h4>2000</h4>
+                        <b>Creator-Kazuya Tsurumaki</b>
+                        <br>
+                        The six-episode series was released in Japan from April 2000 to March 2001 alongside a manga and novel. It originally debuted in the United States on Adult Swim in August 2003, where it managed to gain a significant cult and was widely acclaimed, despite its short length. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+  </section>
+
+  <section>
+     <div id="char" style="margin-left: 69ch; margin-top: 15px;">
+      <h2  class="headcol" id="chhead">TOP CHARACTER</h2>
+     </div> 
+  </section>
+  <section >
+  <div class="container my-5">
+    <h1 class="mb-5"></h1>
+    <div class="row" style="margin-left: 35px;">
+      <div class="col-6 col-md-4 mb-4">
+          <div class="inner-content text-center" >
+            <img class="img-fluid img-fluid1" src="naruto1.jpg" alt="img description"  style="height: 15rem;"  />
+            <h3 class="text1">I am Naruto...</h3>
+            <p class="cta">“I’m not gonna run away, I never go back on my word! That’s my nindo: my ninja way.” – Naruto</p>
+          </div>
+        
+      </div>
+      <div class="col-6 col-md-4 mb-4">
+          <div class="inner-content text-center">
+            <img class="img-fluid img-fluid1" src="luffi.jpg" alt="img description" style="height: 15rem;" />
+            <h3>I am Luffy...</h3>
+            <p class="cta">I don’t want to conquer anything. I just think the guy with the most freedom in this whole ocean… is the Pirate King!</p>
+          </div>
+      </div>
+    
+       <div class="col-6 col-md-4 mb-4">
+          <div class="inner-content text-center">
+            <img class="img-fluid img-fluid1" src="light.jpg" alt="img description" style="height: 15rem;" />
+            <h3>I am Light Yagami...</h3>
+            <p class="cta">"You can't ever win if you're always on the defensive. To win, you have to attack!</p>
+          </div>
+      </div>
+       <div class="col-6 col-md-4 mb-4">
+          <div class="inner-content text-center">
+            <img class="img-fluid img-fluid1" src="elric.jpg" alt="img description"  style="height: 15rem;"/>
+            <h3>We are Elric-brothers</h3>
+            <p class="cta">How can you move forward if you keep regretting the past? -Edward Elric</p>
+          </div>
+      </div>
+       <div class="col-6 col-md-4 mb-4">
+          <div class="inner-content text-center">
+            <img class="img-fluid img-fluid1" src="mikasa.jpg" alt="img description"  style="height: 15rem;" />
+            <h3>Hello I am Mikasa...</h3>
+            <p class="cta">”I’m strong. Stronger than all of you. Extremely strong. I can kill those Titans there. Even if I’m alone.”</p>
+          </div>
+      </div>
+       <div class="col-6 col-md-4 mb-4">
+          <div class="inner-content text-center">
+            <img class="img-fluid img-fluid1" src="goku.jpg" alt="img description"  style="height: 15rem;"/>
+            <h3>GOKU...nam to suna hoga</h3>
+            <p class="cta">“I am the hope of the universe...I am the answer to all living things that cry out for peace...”
+              - Goku,</p>
+          </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section>
+    <div id="histo" style="margin-left: 60ch; margin-top: 15px;">
+      <h2  class="headcol" >History of Anime</h2>
+     </div> 
+    <div id="display" class="hwrap">
+         <div class="hmove">
+
+         </div>
+    </div>
+
+  </section>
+ 
+  
+  <!-- <script src="script.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+ <script>
+ 
+  
+
+  
+  
+  async function anime(){
+    const url =" https://api.jikan.moe/v3/search/anime?q="+textvalue;
+    const response = await fetch(url);
+    const users = await response.json();
+    return users;
+  }
+  
+    const moviename=document.querySelector("#bot");
+    var textvalue='';
+    var result='';
+    moviename.addEventListener("keyup",function(event){
+     if(event.keyCode===13){
+       event.preventDefault();
+       document.getElementById("searchanime").click();
+     }
+    });
+    
+    moviename.addEventListener("click",function(event){
+      event.preventDefault();
+      
+    textvalue=document.querySelector("#searchanime").value;
+    console.log(textvalue);
+    let a = anime();
+    a.then(data =>{ 
+      console.log(data.results);
+      const image=data.results
+      .map(user =>{    
+return `
+<div class="col ">
+    <div class="card h-100 col1 ">
+      <img src="${ user.image_url}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">${"Title:-"+user.title}</h5>
+        <h4 class="card-text">${"Rating:-"+user.score}</h4>
+        <h4 class="card-text">${"Episode:-"+user.episodes}</h4>
+       
+      </div>
+    </div>
+`;
+
+      })
+     $("#search").html(image);
+  })
+})
+
+
+  async function news(){
+    const url ="https://api.jikan.moe/v3/anime/1/news";
+    const response = await fetch(url);
+    const users = await response.json();
+    return users;
+  }
+
+  let b=news();
+  b.then(data=>{
+    console.log(data.articles);
+    const news=data.articles
+    .map(user =>{
+       return `
+       <div class="user liftup ">
+        <p><ul ><li >${user.author_name}said${user.intro}</li></ul></p>
+        </div>
+       `;
+    })
+     $("#display").html(news);
+  })
+
+ </script>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  
+  <script>
+     (function($){
+       "use strict";
+       $('.next').click(function(){ $('.carousel').carousel('next');return false; });
+       $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+     })	
+     (jQuery);
+
+     function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-theme");
+}
+
+const signs = document.querySelectorAll('x-sign')
+const randomIn = (min, max) => (
+  Math.floor(Math.random() * (max - min + 1) + min)
+)
+
+const mixupInterval = el => {
+  const ms = randomIn(2000, 4000)
+  el.style.setProperty('--interval', `${ms}ms`)
+}
+
+signs.forEach(el => {
+  mixupInterval(el)
+  el.addEventListener('webkitAnimationIteration', () => {
+    mixupInterval(el)
+  })
+})
+
+
+  </script>
+  
+<script>AOS.init({
+  duration: 1200,
+})</script>
+</body>
+
+</html>
